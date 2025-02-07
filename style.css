@@ -25,6 +25,9 @@ body {
     position: relative;
     height: 100%;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #bg-image {
@@ -36,19 +39,150 @@ body {
 
 .imgbox div {
     position: absolute;
-    top: 50%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
     align-items: center;
-    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.418);
     padding: 15px 30px;
     border-radius: 8px;
     width: 100%;
+
+}
+
+#odin-logo {
+    height: 75px;
+    margin-right: 10px;
+}
+
+#odintext {
+    font-family: "Skranji", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24px;
+    color: white;
+}
+
+.rightpane {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    background-color: #ecf0f1;
+
+}
+
+#top {
+    padding-top: 100px;
+    max-width: 750px;
+    font-weight: bold;
+}
+
+.padcontent {
+    font-size: 18px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+#bottom {
+    /* padding: 30px; */
+   
+    width: 100%;
+   
+}
+
+#form-fieldset {
+    background-color: white;
+    border: none;
+    padding: 0;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.15);
+}
+
+.form-content {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    /* gap: 200px; */
+    border: none;
+    padding: 30px;
+
+}
+
+.theformtext {
+    padding-left: 25px;
+    margin: 30px 0px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.leftcolumn,
+.rightcolumn {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+label {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 5px;
+
+}
+
+input {
+    margin-bottom: 10px;
+    font-size: 18px;
+    width: 50%;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+/* Password Field with Error */
+input:invalid {
+    border-color: red;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1rem;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 20%;
+    margin-top: 15px;
+    margin-left: 25px;
+}
+
+button:hover {
+    background-color: #45a049;
 }
 
 
-#odin-logo {
-    height: 150px;
-    margin-right: 10px;
+p span a {
+    color: #4CAF50;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+p span a:hover {
+    text-decoration: underline;
+}
+
+#accountcreate{
+    border: none;
+}
+
+#accountcreate p{
+     
+    margin: 15px 0;
+   padding-left:25px ;
 }
